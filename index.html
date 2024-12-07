@@ -3,33 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elijah Parkers Portfolio</title> <!-- Elijah Parker -->
+    <title>Elijah Parkers Portfolio</title>
+    <!-- Elijah Parker -->
+
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to your external stylesheet -->
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#goals">Goals</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
     <header>
-        <h1>Elijah Parkers Portfolio</h1> <!-- Elijah Parker -->
+        <h1>Elijah Parker's Portfolio</h1> <!-- Elijah Parker -->
         <h2>Welcome to my portfolio page</h2>
     </header>
 
-    <!-- About Me Section -->
-    <section class="about-me">
+    <!-- About Me Section (Parent Section) -->
+    <section id="about-me">
         <h3>About Me</h3>
-        <p>Hello! My name is [ELijah]. I am passionate about [Game design and the gym]. Welcome to my personal portfolio.</p>
+        <p>Hello! My name is Elijah. I am passionate about game design and the gym. Welcome to my personal portfolio.</p>
     </section>
 
-    <!-- Goals Section -->
+    <!-- Goals Section (Parent Section) -->
     <section id="goals">
         <h3>My Goals</h3>
-        <p>One of my primary goals is to grow as a [art director of my studio and own a gym after professional football], while continuously learning new skills and improving my craft. I aim to [Gain skills in technology].</p>
+        <p>One of my primary goals is to grow as an art director for my studio and own a gym after professional football, while continuously learning new skills and improving my craft. I aim to gain skills in technology.</p>
     </section>
 
-    <!-- Link to an external website (opens in a new tab) -->
+    <!-- Contact Section (Parent Section) -->
+    <section id="contact">
+        <h3>Contact Me</h3>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Link to an external website -->
     <p>For more information, visit <a href="https://www.example.com" target="_blank">Example Website</a>.</p>
 
     <!-- Picture Section -->
     <section>
         <h3>My Picture</h3>
-        <img src="https://via.placeholder.com/150" alt="A description of the image" /> <!-- https://search.asu.edu/profile/3995296 -->
+        <img src="https://via.placeholder.com/150" alt="A description of the image" />
     </section>
 
 </body>
